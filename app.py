@@ -29,6 +29,8 @@ def main():
         llm = CTransformers(model="llama-2-13b-chat.ggmlv3.q4_1.bin", model_type="llama",
                             config={'max_new_tokens': 3072,  'context_length': 4096, 'temperature': 0.01})
 
+        # Download the Llama model from here: https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML/resolve/main/llama-2-13b-chat.ggmlv3.q4_1.bin?download=true
+
         template = """Extract these: 
         
         - Insured Name/Policyholder
